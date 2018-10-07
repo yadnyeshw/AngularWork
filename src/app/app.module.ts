@@ -5,11 +5,15 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { ProductListComponent } from "app/products/product-list.component";
+import { ConvertToSpacesPipe } from "app/shared/convert-to-spaces.pipe";
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductListComponent
+    ProductListComponent,
+    ConvertToSpacesPipe
   ],
   imports: [
     BrowserModule,
@@ -17,6 +21,6 @@ import { ProductListComponent } from "app/products/product-list.component";
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent,ProductListComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
