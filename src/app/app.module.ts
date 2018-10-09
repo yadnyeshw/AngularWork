@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from "app/products/product-list.component";
 import { ConvertToSpacesPipe } from "app/shared/convert-to-spaces.pipe";
+import { StarComponent } from "app/shared/star.component";
 
 
 
@@ -13,7 +14,8 @@ import { ConvertToSpacesPipe } from "app/shared/convert-to-spaces.pipe";
   declarations: [
     AppComponent,
     ProductListComponent,
-    ConvertToSpacesPipe
+    ConvertToSpacesPipe,
+    StarComponent,
   ],
   imports: [
     BrowserModule,
